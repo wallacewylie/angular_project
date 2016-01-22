@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Routes!</title>
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <base href="/">
+</head>
+<body>
+<header class ="text-center">
+    <div class="page-header">
+        <h1>Pick a Winner 2016</h1>
+    </div>
+</header>
+
+    <a href="/red"><button class="btn btn-danger btd-lg">Bernie Sanders</button></a>
+    <a href="/blue"><button class="btn btn-info btd-lg">Hilary Clinton</button></a>
+    <a href="/orange"><button class="btn btn-warning btd-lg">Donald Trump</button></a>
+
+    <div ng-view>
+
+    </div>
+
+<div class="text-center">
+    <div class="panel-footer"><h1>It's Decision Time!</h1></div>
+</div>
+
+</body>
+</html>
